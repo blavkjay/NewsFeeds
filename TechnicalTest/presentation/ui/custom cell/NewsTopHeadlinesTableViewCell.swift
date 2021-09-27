@@ -79,8 +79,8 @@ final class NewsTopHeadlinesTableViewCell: UITableViewCell {
                 self?.newsImageView.image = image
             }
         }
-        newsTitleLabel.text = data?.descriptionField
-        authorNameLabel.text = data?.author
+        newsTitleLabel.text = data?.descriptionField ?? "No Descriptions"
+        authorNameLabel.text = data?.author ?? "No Author"
     }
     
 }
